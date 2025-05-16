@@ -1,4 +1,4 @@
-# R-based worflow for processing lidar point cloud data, DTM and CHM creation; LAS normalization; Canopy metrics; Individual tree detection; Crown-level metrics computation
+# R-based script for processing lidar point cloud data, DTM and CHM creation; LAS normalization; Canopy metrics; Individual tree detection; Crown-level metrics computation
 
 # Define the f_metrics function in the global environment
 f_metrics <- function(Z, n) {
