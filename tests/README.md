@@ -1,4 +1,4 @@
-# Unit Tests — `lidar_pc_canopy_metrics_fn.r`
+## Unit Tests — `lidar_pc_canopy_metrics_fn.r`
 
 Tests for [`lidar_pc_canopy_metrics_fn.r`](https://github.com/OpenForest4D/lidar-canopy-metrics-r/blob/main/lidar_pc_canopy_metrics_fn.r) using the [`testthat`](https://testthat.r-lib.org/) framework (≥ 3.0).
 
@@ -28,45 +28,8 @@ Tests for [`lidar_pc_canopy_metrics_fn.r`](https://github.com/OpenForest4D/lidar
 | 11 | **Smoke test** | Function exists; graceful error on missing `.laz` file |
 | 12 | **Integration** | Simulates `grid_metrics` cell-splitting via `lapply` — verifies `f_metrics` composability |
 
----
 
-## How to Run
-
-### 1. Install dependencies
-
-```r
-install.packages("testthat")
-
-# For integration tests (optional — skipped automatically if unavailable)
-install.packages("lidR")
-```
-
-### 2. Source the original file and run the tests
-
-```r
-source("lidar_pc_canopy_metrics_fn.r")
-testthat::test_file("test_lidar_pc_canopy_metrics.r")
-```
-
-### 3. Run as part of a package (if using `devtools`)
-
-```r
-devtools::test()
-```
-
----
-
-## File Structure
-
-```
-.
-├── lidar_pc_canopy_metrics_fn.r      # Source file under test
-└── tests/testthat/test_lidar_pc_canopy_metrics.r    # Unit tests (this file)
-```
-
----
-
-## Notes
+### Notes
 
 - Tests for `f_metrics()` require **no external files** — they use synthetic point clouds constructed inline.
 - Tests for `process_lidar_data()` are **automatically skipped** if `lidR` is not installed or no `.laz` file is present.
