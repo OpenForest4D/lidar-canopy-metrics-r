@@ -1,5 +1,6 @@
 [![NSF-1948997](https://img.shields.io/badge/NSF-2409885-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2409885) [![NSF-2409886](https://img.shields.io/badge/NSF-2409886-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2409886) [![NSF-2409887](https://img.shields.io/badge/NSF-2409887-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2409887)
 
+
 ## Lidar Data Processing and Canopy Metrics Extraction in R
 
 R-based script for processing airborne lidar data, visualizing point clouds, generating surface models, extracting canopy metrics, and segmenting individual trees. The workflow leverages the [lidR](https://r-lidar.github.io/lidRbook/), [terra](https://rspatial.github.io/terra/), [sf](https://r-spatial.github.io/sf/), [RCSF](https://cran.r-project.org/web/packages/RCSF/index.html) and other packages to automate common lidar analysis tasks, including noise filtering, ground classification, normalization, canopy height modeling, and individual tree segmentation.
